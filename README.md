@@ -1,39 +1,60 @@
-I am solving the classification of MINST (Modified National Institute of Standards and Technology) dataset for sign language. 
+# MNIST Classification for Sign Language Recognition
 
-It was a Individual Course Project for the subject Pattern Recognition.
+This project tackles the classification of the **MNIST Sign Language dataset** as a part of an individual course project for the subject **Pattern Recognition**, a graduate course for Florida Institute of Technology.
 
-I am using the MNIST from Kaggle.Link to the dataset: https://www.kaggle.com/datasets/datamunge/sign-language-mnist
+---
 
-About the Data:
+## Dataset Information
+The dataset used is the **Sign Language MNIST** from Kaggle, which includes representations of all American Sign Language characters. [Link to the dataset](https://www.kaggle.com/datasets/datamunge/sign-language-mnist).
 
-It consists of all the American Sign Language
-![My local image](images/samples.png)
+### Data Preview:
+![Sample Data](images/samples.png)
 
-For this ML Task, I am using making omy own custom classification models without using any third party libraries. I am working with 
-1. Logistic regression
-2. LDA (Linear Discriminant Analysis)
-3. LDA with PCA (Principal Component Analysis)
-4. SVM (Support Vector Machine)
-5. CNN (Convolutional Neural Network)
+---
 
- These algorithms are used for multiclass classifciation. However, I have used sk learn to visualize the data. To compare between these models I have taken following metrices:
+## Machine Learning Task
 
-![My local image](images/metrices.png)
+The goal is to classify American Sign Language characters using custom-built classification models. The following algorithms are implemented from scratch (without using third-party libraries):
 
+1. **Logistic Regression**
+2. **Linear Discriminant Analysis (LDA)**
+3. **LDA with Principal Component Analysis (PCA)**
+4. **Support Vector Machine (SVM)**
+5. **Convolutional Neural Network (CNN)**
 
+For visualization and data exploration, **scikit-learn** has been used. The task involves **multiclass classification**, and the models are compared using specific performance metrics:
 
-The project structure is as follows:
-# Entry point :
-It has the loading of dataset and basic visiulization of initial data. 
+### Comparison Metrics:
+![Metrics](images/metrices.png)
 
-Each File has a name of Custom_ and model assinged to it. 
+---
 
-Qualitative Analysis is the part where I ran my custom images and made the model predict the outcome.
+## Project Structure
 
-![My local image](images/analysis.png)
+### **Entry Point**
+The entry point script handles dataset loading and initial data visualization.
 
+### **Custom Models**
+Each algorithm is implemented in a separate file prefixed with `Custom_` followed by the model name.
 
-## To run the code. 
-Clone the repo. You need to also download the dataset from Kaggel: https://www.kaggle.com/datasets/datamunge/sign-language-mnist inside this repo. You can run the individual model to get the custom classification. 
+### **Qualitative Analysis**
+A separate section is dedicated to qualitative analysis, where custom images are fed into the models to predict outcomes. Example results:
+![Qualitative Analysis](images/analysis.png)
 
-Happy Coding! 
+---
+
+## Video Presentation
+You can watch a detailed presentation of the project here:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dXkr6J9Cu3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+## Setting Up the Environment
+
+Follow the steps below to set up the virtual environment and install required dependencies:
+
+### Step 1: Clone the Repository
+```bash
+git clone <repository-url>
+cd <repository-folder>
